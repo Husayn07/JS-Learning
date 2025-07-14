@@ -1,0 +1,20 @@
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Roof -->
+  <polygon points="50,30 20,60 80,60" fill="#2C3E50"></polygon>
+  
+  <!-- House base -->
+  <rect x="25" y="60" width="50" height="25" fill="#34495E"></rect>
+
+  <!-- H Letter (stylized as pillars) -->
+  <rect x="35" y="65" width="5" height="15" fill="#ECF0F1"></rect>
+  <rect x="55" y="65" width="5" height="15" fill="#ECF0F1"></rect>
+  <rect x="40" y="71" width="15" height="3" fill="#ECF0F1"></rect>
+  
+  <!-- Brand Text -->
+  <text x="100" y="60" font-family="Arial, sans-serif" font-size="24" fill="#2C3E50" font-weight="bold">
+    H Properties
+  </text>
+  <text x="100" y="85" font-family="Arial, sans-serif" font-size="16" fill="#7F8C8D">
+    Real Estate &amp; Housing
+  </text>
+</svg>
