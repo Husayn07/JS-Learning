@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+h1 {
+  font-size: clamp(2rem 5vw 4rem);
+  color: red;
+}
+
+nav {
+  background-color: darkgrey;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0px 5px 10px grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+.nav-containner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 120px;
+  margin: 0 auto;
+  border-bottom: 2px solid grey;
+  padding: 0 2rem;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+img, i, a {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.nav-search{
+  margin-right: 4rem;
+}
+
+.nav-links {
+  margin-right: 4rem;
+}
+
+a{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: white;
+  
+}
+
+input {
+  border-radius: 5px;
+  background-color: white;
+  color: grey;
+  font-weight: bold;
+}
+i {
+  color: white;
+}
+
+@media(min-width: 768px) {
+  .nav-mobile {
+    display: none;
+  }
+  .nav-links-mobile {
+    display: none;
+  }
+}
+
+@media(max-width: 768px) {
+  .nav-mobile {
+    display: block;
+  }
+  
+  .nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: transparent;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 0px;
+    
+  }
+  .nav-containner {
+    min-height: 80px;
+    width: 100%;
+  }
+  
+  .bar {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    border-radius: 4px;
+    
+  }
+  
+  .toggle {
+    display: none;
+  }
+  
+  .nav-links-mobile {
+    position: absolute;
+    top: 80px;
+    left: -2px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+ .nav-links-mobile .link {
+    width: 100%;
+    color: red;
+    padding: 1.2rem 2rem;
+   border: 2px solid grey;
+   box-shadow: 0 2px 2px grey;
+   background-color: blue;
+   transition: all 0.5sec ease;
+  }
+  
+  .lknk:hover, .link:active {
+    transform: scale(1.1);
+    transition: all 0.5sec ease;
+  }
+  
+  
+}
+

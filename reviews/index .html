@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css" />
+  <title>Our reviews</title>
+</head>
+<body>
+  <nav>
+    <h1>Hz&Sons</h1>
+    <button>
+      <span>_</span>
+    </button>
+  </nav>
+   <h2>
+    Our reviews!
+  </h2>
+  <div id="mainContainner">
+     
+  <div id="containner">
+    <div id="imgContainner"><img id="image"></div>
+    <h3 id="name"></h3>
+    <p id="about"></p>
+    <button id="btn"><</button>
+    <button id="btn">o</button>
+    <button id="btn">></button>
+  </div>
+  </div>
+ <style>
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: green;
+  animation: slideRight 2s ease-in-out infinite;
+}
+</style>
+
+<div class="box"></div>
+</body>
+<script type="module" src="script.js"></script>
+</html>
